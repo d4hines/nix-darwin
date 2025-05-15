@@ -365,5 +365,12 @@ in {
       '';
     };
 
+    system.defaults.dock.no-bouncing = mkOption {
+      type = types.nullOr types.bool;
+      default = null;
+      description = ''
+        Disable bouncing icons in the dock.
+      '';
     };
+  };
 }
